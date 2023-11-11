@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating animations and keyframes</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: grey;
+        }
+        .mainbox{
+            height: 100px;
+            width: 100px;
+            background-color: hotpink;
+            position: relative;
+            /* ANIMATION */
+            animation-name: divyesh;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+        }
+
+        @keyframes divyesh{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+                
+            }
+            70%{
+                top: 250px;
+                left: 250px;
+
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mainbox">
+            
+        </div>
+    </div>
+</body>
+</html>

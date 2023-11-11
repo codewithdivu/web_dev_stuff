@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-parent {
+            display: flex;
+        }
+
+        .jc-center {
+            justify-content: center;
+        }
+
+        button.margin-right {
+            margin-right: 20px;
+        }
+
+        .green {
+            height: 100px;
+            width: 100px;
+            font-size: 75px;
+        }
+
+        .magenta {
+            width: 100px;
+            font-size: 75px;
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            font-size: 75px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <button onclick="cloneCounter()">New</button>
+    <div id="counter">
+        <div class="flex-parent jc-center">
+            <button id='minus' name="min" class="green margin-right" onclick="decrement(this)">-</button>
+            <button id='plus' name="sum" class="magenta" onclick="decrement(this)">+</button>
+        </div>
+        <p id="demo">0</p>
+    </div>
+
+    <div id="counterContainer">
+
+    </div>
+    <script>
+
+        function decrement(element) {
+            let para = document.getElementById('demo');
+
+            if (element.name === 'min')
+                para.innerHTML = para.innerHTML - 1;
+            else {
+                para.innerHTML = Number(para.innerHTML) + Number(1);
+            }
+        }
+
+        const cloneCounter = () => {
+            // console.log("calling");
+            let x = document.getElementById('counter');
+            let y = x.cloneNode(true);
+            document.getElementById('counterContainer').appendChild(y);
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

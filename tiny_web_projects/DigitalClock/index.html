@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <title>Task-10</title>
+</head>
+
+<style>
+    *,
+    body {
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    #container {
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    #main {
+
+        /* border: 5px solid blue; */
+    }
+
+    p {
+        font-size: 10vw;
+    }
+</style>
+
+<body>
+    <div id="container">
+        <div id="main">
+            <p id="demo"></p>
+        </div>
+    </div>
+    <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+    <script>
+
+        const timeParser = (item) => item < 10 ? '0' + item : item;
+        setInterval(() => {
+            const d = new Date();
+            if (d.getSeconds() < 10 || d.getMinutes() < 10 || d.getHours() < 10) {
+
+            }
+            document.getElementById('demo').innerText = timeParser(d.getHours()) + ':' + timeParser(d.getMinutes()) + ':' + timeParser(d.getSeconds());
+        }, 1000);
+
+    </script>
+
+
+</body>
+
+</html>

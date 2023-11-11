@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4</title>
+</head>
+
+<body>
+    <h1>Temperature Converter</h1>
+
+    <script>
+
+        function innitValue(element) {
+            var fah = document.getElementById('fah');
+            var cels = document.getElementById('cels');
+
+            if (element.name && element.name == 'f') {
+                cels.value = (fah.value - 32.0) * 5.0 / 9.0;
+            }
+            else {
+                fah.value = (cels.value * 9.0 / 5.0) + 32.0;
+            }
+        }
+
+    </script>
+
+
+
+    Faherenheit: <input type="number" id="fah" name="f" oninput="innitValue(this)">
+
+    <select>
+        <option value="fahh">Faherenheit</option>
+    </select>
+
+
+    Celsius: <input type="number" id="cels" name="c" oninput="innitValue(this)">
+
+    <select>
+        <option value="celss">Celsius</option>
+    </select>
+
+
+</body>
+
+</html>

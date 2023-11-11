@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+</head>
+
+<body>
+    Price: <input type="number" id="price" onkeypress="calculate()">
+    Quantity: <input type="number" id="quantity" onkeypress="calculate()">
+
+    <p id="demo"></p>
+
+    <script>
+        
+        const calculate = () => {
+            var x = document.getElementById('demo');
+            var pri = document.getElementById('price');
+            var quan = document.getElementById('quantity');
+            x.innerText = price.value * quan.value;
+            // console.log('quan :>> ', quan.value);
+            // console.log('pri :>> ', pri.value);
+        }
+    </script>
+
+</body>
+
+</html>

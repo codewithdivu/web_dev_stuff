@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JavaScript</title>
+</head>
+<body>
+    <h1>Arrays in JavaScript</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aspernatur ratione illo? Vel laboriosam sunt vitae qui molestiae natus eos nisi inventore! Ad, ea consequuntur. Natus ullam magni eum ab.</p>
+
+
+    <script>
+
+        // declaring empty array of fruits
+        // let fruits = [];
+
+         let fruits = ['Mango','Apple','Grapes','Watermelon'];
+
+        // Indivisualy we can target the any element of array
+        // console.log(fruits[3]);
+        // console.log(fruits[1]);
+        
+        // also we can change the element at any index
+        // fruits[2] = 'BlackBerry';
+        // console.log(fruits[2]);
+        
+        // also we can add element in array
+        // fruits[4] = 'Bananas';
+        // console.log(fruits[4]);
+        
+        // Also in Javascript we can store different types of element in array
+        // fruits[5] = 984;
+        // console.log(fruits[5]);
+
+        // find the size of an array 
+        // console.log(fruits.length);
+
+        // this is how we print our array
+        // console.log(fruits);
+
+
+        //===============================================================================================================
+        //===============================================================================================================
+                                // FILTERING THE ARRAY USING filter function
+
+            const  nums = [1,-1,4,-6,9];
+
+            // this functins will return the positive numbers array
+            // const filteredArray = nums.filter(function(value){
+            //     return value>=0;
+            // });
+            
+
+            // It's good time to use array function 
+
+            const filteredArray = nums.filter(value => value>=0)
+            console.log(filteredArray);
+
+
+    </script>
+
+</body>
+</html>

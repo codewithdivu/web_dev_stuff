@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JS</title>
+</head>
+<style>
+    #btn {
+        padding: 5px 10px;
+        /* border: 2px solid black; */
+        /* background-color: cornflowerblue; */
+    }
+
+    /* #btn:hover{
+        color: darkblue;
+        background-color: darkorchid;
+        padding: 10px 10px;
+    } */
+</style>
+
+<body>
+    <div class="container">
+        <h1>this is my Heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, facilis iste? Odit harum velit,
+            expedita sequi aut nesciunt quibusdam placeat eius sit a perferendis quia libero optio corporis consequatur
+            amet animi non similique praesentium distinctio, repellat nostrum repellendus. Culpa, quia! Recusandae,
+            voluptates placeat. Eos nesciunt iusto beatae sint impedit a.</p>
+    </div>
+    <button id="btn">Show/Hide</button>
+    <script>
+
+        let btn = document.getElementById('btn');
+        let para = document.getElementById('para');
+
+        btn.addEventListener('click', () => {
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

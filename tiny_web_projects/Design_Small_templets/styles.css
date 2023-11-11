@@ -1,0 +1,92 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+}
+#container {
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+#car_box_container {
+  border-radius: 7px;
+  overflow: hidden;
+}
+.car_box {
+  width: 300px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#box-1 {
+  background-color: #e28424;
+  color: white;
+}
+.car_heading {
+  font-weight: bold;
+  font-size: 2em;
+  padding: 20px 0px;
+}
+.car_paragraph_1 {
+  color: wheat;
+}
+.car_button_1 {
+  align-items: flex-end;
+}
+#sedan_car {
+  color: rgb(199, 166, 105);
+}
+#box-2 {
+  background-color: #016972;
+  color: white;
+}
+
+.car_paragraph_2 {
+  color: white;
+}
+.car_button_2 {
+  align-items: flex-end;
+}
+#suv_car {
+  color: #016972;
+}
+#box-3 {
+  background-color: #00403f;
+  color: white;
+}
+.car_paragraph_3 {
+  color: white;
+}
+.car_button_3 {
+  align-items: flex-end;
+}
+#luxury {
+  color: #00403f;
+}
+.btn {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  margin-top: 63px;
+  background-color: white;
+  border: 2px solid white;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+#sedan_car:hover {
+  color: white;
+}
+#suv_car:hover {
+  color: white;
+}
+#luxury:hover {
+  color: white;
+}

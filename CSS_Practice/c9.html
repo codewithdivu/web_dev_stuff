@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creating a Navigation Menu </title>
+    <style>
+        .navbar{
+            background-color: darkgrey;
+            border-radius: 4px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 10px 17px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .search{
+            float: right;
+            /* padding: 12px 15px; */
+            margin: 5px;
+            /* font-size: 20px; */
+        }
+        .navbar input{
+            border: 2px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">file</a></li>
+                <li><a href="#">about</a></li>
+                <div class="search">
+                    <input type="text" id="search" class="search" placeholder="Search Here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

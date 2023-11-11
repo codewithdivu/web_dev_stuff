@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM PROJECT</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(women.jpg);
+            color: white;
+        }
+
+        .left {
+            /* border: 2px solid rgb(26, 77, 90); */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+
+        }
+
+        .left img {
+            width: 170px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 20px auto;
+            /* border: 2px solid blue; */
+        }
+
+        .right {
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            padding: 5px 14px;
+            border: 2px solid grey;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            margin: 7px;
+        }
+
+        .btn:hover {
+            background-color: rgb(71, 69, 69);
+
+        }
+
+        .container {
+            border: 1px solid white;
+            margin: 134px 37px;
+            padding: 5px 5px;
+            width: 30%;
+            border-radius: 7px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 313px;
+            padding: 6px;
+            margin: 3px auto;
+            border: 2px solid black;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            margin: 25px auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>DM FITNESS</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="c6.html">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email US</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Want to Join DM Fitness</h1>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="number" min="1" max="100" placeholder="Enter Your Age" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" maxlength="10" placeholder="Enter Your Phone number" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Enter Your E-mail" required>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

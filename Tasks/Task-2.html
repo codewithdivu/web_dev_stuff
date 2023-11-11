@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1</title>
+  </head>
+
+  <body>
+    <p id="demo">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat
+      consequatur ipsum asperiores natus officia corporis? Veritatis tempora
+      dolorem cupiditate, nesciunt, possimus eos voluptate ratione iusto vitae,
+      et ex eum?
+    </p>
+    <button type="button" onclick="myfunc()">Hide the Text</button>
+    <button type="button" onclick="myfun()">Show the Text</button>
+
+    <script>
+      var y = document.getElementById("demo");
+
+      function myfunc() {
+        y.style.display = "none";
+      }
+
+      function myfun() {
+        y.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

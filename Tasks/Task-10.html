@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-10</title>
+
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: grey;
+        }
+
+        #container form {
+            /* background-color: hotpink; */
+            padding: 2rem;
+            width: 40%;
+        }
+
+        form label {
+            width: 30%;
+        }
+
+        form input {
+            margin-left: 1rem;
+            width: 70%;
+        }
+
+        .formitems {
+            /* background-color: lawngreen; */
+            display: flex;
+
+            margin: 0.5rem 0;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <form  >
+            <div class="formitems">
+                <label for="name">Name:</label> <input required type="text" id="name" name="name"><br>
+            </div>
+
+            <div class="formitems">
+                <label for="age">Age:</label> <input required type="number" id="age" name="age"><br>
+            </div>
+
+            <div class="formitems">
+                <label for="email">Email:</label> <input required type="email" id="email" name="email"><br>
+            </div>
+
+            <div class="formitems">
+                <label for="password">Password:</label> <input required type="password" id="password"
+                    name="password"><br>
+            </div>
+
+            <div class="formitems">
+                <label for="">Gender:</label>
+                <input required type="radio" id="male" name="gender">Male
+                <input required type="radio" id="female" name="gender">Female<br>
+            </div>
+
+            <div class="formitems">
+                <label for="">Languages:</label>
+                <input  type="checkbox" id="gujarati" name="gujarati">Gujarati<br>
+                <input  type="checkbox" id="english" name="english">English
+                <input  type="checkbox" id="hindi" name="hindi">Hindi
+            </div>
+
+            <div class="formitems">
+                <label for="color">Favourite Color:</label> <input required type="color" id="color" name="color"><br>
+            </div>
+
+            <div class="formitems">
+                <label for="file">Upload Image:</label> <input  type="file" id="file" name="file"
+                    onchange="fileOnchange()"><br>
+            </div>
+
+            <div class="formitems">
+                <button  onclick="handleSubmitForm(event)" type="submit" id="submit" name="submit" value="submit">Submit</button>
+            </div>
+
+
+
+
+
+
+
+
+        </form>
+    </div>
+
+    <script>
+        const handleSubmitForm = (event) => {
+            console.log('i am calling');
+            event.preventDefault();
+            let name = document.getElementById('name').value;
+            let age = document.getElementById('age').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let isKnownGujarati = document.getElementById('gujarati').checked;
+            let isKnownEnglish = document.getElementById('english').checked;
+            let isKnownHindi = document.getElementById('hindi').checked;
+            let genderItems = document.getElementsByName('gender');
+            let favColor = document.getElementById('color').value;
+            let fileInput = document.getElementById('file');
+
+            console.log('name :>> ', name);
+            console.log('age :>> ', age);
+            console.log('email :>> ', email);
+            console.log('password :>> ', password);
+            console.log('isKnownGujarati :>> ', isKnownGujarati);
+            console.log('isKnownEnglish :>> ', isKnownEnglish);
+            console.log('isKnownHindi :>> ', isKnownHindi);
+            console.log('favColor :>> ', favColor);
+            console.log('genderItems :>> ', genderItems);
+        }
+
+        const fileOnchange = (event) => {
+            console.log('files calling', event.target.files);
+        }
+    </script>
+</body>
+
+</html>

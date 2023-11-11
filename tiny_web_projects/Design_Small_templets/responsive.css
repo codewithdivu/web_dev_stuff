@@ -1,0 +1,6 @@
+@media (max-width: 800px) {
+  #car_box_container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
